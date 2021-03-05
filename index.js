@@ -46,6 +46,8 @@ function formatCustomerInformation() {
             city
         }
 
+        let formattedCustString = `${first_name} ${last_name} ${make} ${model} Purchased: ${datePurchased} Last Payment: ${paymentDate} Phone: ${phoneNumber} City: ${city}`
+        console.log(formattedCustString + '\n')
         customers.push(formattedInfo)
     }
     return customers
@@ -53,7 +55,7 @@ function formatCustomerInformation() {
 
 newCustomerInformation = formatCustomerInformation()
 
-console.log(newCustomerInformation)
+
 
 
 
